@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raisa Jahan Rini - Final Semester Computer Science & Engineering (CSE) Student Portfolio. Full-Stack Developer, AI Enthusiast, and Software Engineer.">
+    <meta name="author" content="Raisa Jahan Rini">
+    <title>Raisa Jahan Rini | Final Semester CSE Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Particles Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>Raisa<span class="logo-dot">.</span>Dev<span class="logo-bracket"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-graduate"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                    <li><a href="#academics" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Academics</a></li>
+                    <li><a href="#terminal" class="nav-link"><i class="fa-solid fa-terminal"></i> Terminal</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="btn btn-primary btn-sm btn-resume" id="open-resume-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </button>
+                <button class="hamburger-menu" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        <span>Final Semester CSE Student &bull; Graduating 2026</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Raisa Jahan Rini</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="typing-prefix">I am a </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Passionate final-year Computer Science & Engineering student skilled in developing modern web applications with <strong class="highlight-text">React.js</strong> and <strong class="highlight-text">Node.js</strong>, alongside solid foundational knowledge in <strong class="highlight-text">Software Quality Assurance (SQA)</strong> and test engineering. Ready to tackle complex software engineering challenges.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <span>Explore My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline btn-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:raisa.jahan.rini@example.com" class="social-icon" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Competitive Programming">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-card glass-card">
+                        <div class="avatar-img-container">
+                            <img src="avatar.png" alt="Raisa Jahan Rini - CSE Student" class="avatar-img">
+                        </div>
+                        
+                        <div class="floating-badge badge-1">
+                            <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+                            <span>React & Node.js</span>
+                        </div>
+
+                        <div class="floating-badge badge-4">
+                            <i class="fa-solid fa-list-check" style="color: #10b981;"></i>
+                            <span>SQA & Testing</span>
+                        </div>
+                        
+                        <div class="floating-badge badge-2">
+                            <i class="fa-brands fa-python" style="color: #387eb8;"></i>
+                            <span>AI Capstone</span>
+                        </div>
+
+                        <div class="floating-badge badge-3">
+                            <i class="fa-solid fa-laptop-code" style="color: #a855f7;"></i>
+                            <span>C++ & DS/Algo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar-wrapper">
+                <div class="stats-bar glass-card">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3.92">0</div>
+                        <div class="stat-label">CGPA (Out of 4.0)</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="450">0</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Semesters Completed</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-sparkles"></i> Get To Know Me</span>
+                    <h2 class="section-title">Academic & Professional Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>CSE Final Semester Senior</h3>
+                        <p>
+                            Currently in my 8th and final semester pursuing a Bachelor of Science in Computer Science & Engineering. Combining strong theoretical computer science fundamentals with modern software engineering practices.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Research & AI Capstone</h3>
+                        <p>
+                            Conducting undergraduate capstone research focused on deep learning for computer vision in healthcare diagnostics. Experienced with PyTorch, OpenCV, and Flask backend integration.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3>Full-Stack Development</h3>
+                        <p>
+                            Skilled in designing RESTful APIs, relational/NoSQL database schemas, dynamic interactive UIs with JavaScript/React, and responsive layouts with high design aesthetics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-highlights glass-card">
+                    <div class="highlights-content">
+                        <h3><i class="fa-solid fa-bullseye gradient-icon"></i> My Engineering Philosophy</h3>
+                        <p>
+                            "Code is not just about solving a problem; it's about crafting elegant, scalable, and maintainable software that delivers meaningful user experiences. As I transition from computer science academia to industry, I thrive on continuous learning and collaborative engineering."
+                        </p>
+                        
+                        <div class="tags-container">
+                            <span class="tag"><i class="fa-solid fa-check"></i> Clean Code</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Data Structures</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> System Design Basics</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Team Collaboration</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Agile Mindset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-microchip"></i> My Tech Stack</span>
+                    <h2 class="section-title">Technical Skills & Tools</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Skill Category Tabs -->
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-category="all">All Tech</button>
+                    <button class="skill-tab" data-category="languages">Languages</button>
+                    <button class="skill-tab" data-category="web">Web & Full-Stack</button>
+                    <button class="skill-tab" data-category="ai">AI / Data Science</button>
+                    <button class="skill-tab" data-category="tools">Tools & DBs</button>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Skills injected dynamically by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="capstone">Capstones & AI</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack Web</button>
+                    <button class="filter-btn" data-filter="systems">Systems & Algo</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects injected dynamically by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics & Thesis Section -->
+        <section class="section academics-section" id="academics">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-award"></i> Academic Excellence</span>
+                    <h2 class="section-title">Education & Milestones</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="academics-grid">
+                    <!-- Education Card -->
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h3 class="timeline-title">B.Sc. in Computer Science & Engineering</h3>
+                                <span class="timeline-institution">University of Engineering & Technology</span>
+                                <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022 - 2026 (Final Semester)</div>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p><strong>CGPA:</strong> 3.92 / 4.00 (Ranked top 3 in department)</p>
+                            <p><strong>Key Coursework:</strong> Data Structures & Algorithms, Object Oriented Programming (C++/Java), Operating Systems, Database Management Systems, Computer Networks, Software Engineering, Web Engineering, Artificial Intelligence, Compiler Design.</p>
+                        </div>
+                    </div>
+
+                    <!-- Thesis & Capstone Card -->
+                    <div class="timeline-card glass-card highlight-card">
+                        <div class="timeline-header">
+                            <div class="timeline-badge thesis-badge"><i class="fa-solid fa-microscope"></i></div>
+                            <div>
+                                <h3 class="timeline-title">Final Year Capstone Research Thesis</h3>
+                                <span class="timeline-institution">AI & Computer Vision Laboratory</span>
+                                <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Fall 2025 - Spring 2026</div>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <h4 class="thesis-topic">"Automated Diagnostic Assistance in Chest X-Rays using Deep Convolutional Architectures & Explainable AI"</h4>
+                            <p>Developing lightweight U-Net and ResNet CNN models with Grad-CAM heatmaps for interpretable multi-class pulmonary lesion detection, deployed via a Python Flask REST API & Web Dashboard.</p>
+                            <span class="badge-tag"><i class="fa-solid fa-flask"></i> Thesis in Progress</span>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Leadership -->
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-badge"><i class="fa-solid fa-trophy"></i></div>
+                            <div>
+                                <h3 class="timeline-title">Honors & Extracurricular Leadership</h3>
+                                <span class="timeline-institution">CSE Department & Tech Clubs</span>
+                                <div class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2023 - 2026</div>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="achievement-list">
+                                <li><i class="fa-solid fa-medal gold"></i> <strong>Dean’s Honor List:</strong> Awarded for consecutive 6 semesters for outstanding GPA.</li>
+                                <li><i class="fa-solid fa-trophy gold"></i> <strong>1st Runner-Up:</strong> National Inter-University Software Hackathon 2025.</li>
+                                <li><i class="fa-solid fa-user-gear"></i> <strong>Executive Member:</strong> University Computer Club (Organized Coding Competitions & Web Dev Workshops).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal / Code Playground Section -->
+        <section class="section terminal-section" id="terminal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-square-terminal"></i> Interactive Shell</span>
+                    <h2 class="section-title">Raisa's Code Sandbox & CLI</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="terminal-container glass-card">
+                    <div class="terminal-bar">
+                        <div class="terminal-buttons">
+                            <span class="term-btn term-close"></span>
+                            <span class="term-btn term-min"></span>
+                            <span class="term-btn term-max"></span>
+                        </div>
+                        <div class="terminal-tabs">
+                            <button class="term-tab active" data-file="cpp"><i class="fa-solid fa-file-code"></i> Solution.cpp</button>
+                            <button class="term-tab" data-file="js"><i class="fa-brands fa-square-js"></i> PortfolioApp.js</button>
+                            <button class="term-tab" data-file="python"><i class="fa-brands fa-python"></i> CapstoneAI.py</button>
+                            <button class="term-tab" data-file="cli"><i class="fa-solid fa-terminal"></i> Interactive CLI</button>
+                        </div>
+                    </div>
+
+                    <div class="terminal-body">
+                        <!-- Code Viewers -->
+                        <div class="code-view active" id="code-cpp">
+<pre><code><span class="code-keyword">#include</span> <span class="code-string">&lt;iostream&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;vector&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;string&gt;</span>
+
+<span class="code-comment">// Candidate Profile Data Structure</span>
+<span class="code-keyword">class</span> <span class="code-type">CSESenior</span> {
+<span class="code-keyword">private</span>:
+    std::string name = <span class="code-string">"Raisa Jahan Rini"</span>;
+    <span class="code-type">double</span> cgpa = <span class="code-number">3.92</span>;
+    <span class="code-type">int</span> semester = <span class="code-number">8</span>;
+
+<span class="code-keyword">public</span>:
+    <span class="code-type">void</span> <span class="code-func">printSummary</span>() {
+        std::cout &lt;&lt; <span class="code-string">"Student: "</span> &lt;&lt; name &lt;&lt; std::endl;
+        std::cout &lt;&lt; <span class="code-string">"Status: Ready for Software Engineering Roles!"</span> &lt;&lt; std::endl;
+    }
+};
+
+<span class="code-type">int</span> <span class="code-func">main</span>() {
+    <span class="code-type">CSESenior</span> raisa;
+    raisa.<span class="code-func">printSummary</span>();
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
+}</code></pre>
+                        </div>
+
+                        <div class="code-view" id="code-js">
+<pre><code><span class="code-comment">// Full-Stack Modern Web Architecture</span>
+<span class="code-keyword">class</span> <span class="code-type">DeveloperProfile</span> {
+    <span class="code-func">constructor</span>() {
+        <span class="code-keyword">this</span>.name = <span class="code-string">'Raisa Jahan Rini'</span>;
+        <span class="code-keyword">this</span>.role = <span class="code-string">'Full-Stack Software Engineer'</span>;
+        <span class="code-keyword">this</span>.skills = [<span class="code-string">'JavaScript (ES6+)'</span>, <span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'PostgreSQL'</span>];
+        <span class="code-keyword">this</span>.isGraduatingSoon = <span class="code-keyword">true</span>;
+    }
+
+    <span class="code-func">getHighlights</span>() {
+        <span class="code-keyword">return</span> <span class="code-string">`Building responsive web applications with dynamic UI and optimal state management.`</span>;
+    }
+}
+
+<span class="code-keyword">const</span> rini = <span class="code-keyword">new</span> <span class="code-type">DeveloperProfile</span>();
+console.<span class="code-func">log</span>(rini.<span class="code-func">getHighlights</span>());</code></pre>
+                        </div>
+
+                        <div class="code-view" id="code-python">
+<pre><code><span class="code-comment"># Final Year Capstone AI Model Endpoint</span>
+<span class="code-keyword">import</span> torch
+<span class="code-keyword">import</span> torch.nn <span class="code-keyword">as</span> nn
+
+<span class="code-keyword">class</span> <span class="code-type">ChestXRayClassifier</span>(nn.Module):
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self, num_classes=<span class="code-number">4</span>):
+        super().<span class="code-func">__init__</span>()
+        self.backbone = torch.hub.<span class="code-func">load</span>(<span class="code-string">'pytorch/vision'</span>, <span class="code-string">'resnet50'</span>, pretrained=<span class="code-keyword">True</span>)
+        self.fc = nn.<span class="code-func">Linear</span>(<span class="code-number">2048</span>, num_classes)
+        
+    <span class="code-keyword">def</span> <span class="code-func">forward</span>(self, x):
+        features = self.backbone(x)
+        <span class="code-keyword">return</span> torch.<span class="code-func">sigmoid</span>(self.fc(features))
+
+print(<span class="code-string">"Raisa's Capstone Model initialized successfully."</span>)</code></pre>
+                        </div>
+
+                        <div class="code-view" id="code-cli">
+                            <div class="cli-output" id="cli-output">
+                                <p class="cli-welcome">Welcome to Raisa Jahan Rini's Interactive CLI v1.0!</p>
+                                <p class="cli-hint">Type <span class="cmd-highlight">'help'</span> to view available terminal commands.</p>
+                            </div>
+                            <div class="cli-input-line">
+                                <span class="cli-prompt">raisa@cse-terminal:~$</span>
+                                <input type="text" id="cli-input" placeholder="type a command..." autocomplete="off" spellcheck="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle"><i class="fa-solid fa-comments"></i> Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Let's talk about opportunities!</h3>
+                        <p>
+                            I am currently open to full-time Software Engineer, Web Developer, and Graduate Research positions. Feel free to send me a message or connect via social links!
+                        </p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:raisa.jahan.rini@example.com" class="info-val">raisa.jahan.rini@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-val">Dhaka, Bangladesh</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                                <div>
+                                    <span class="info-label">Status</span>
+                                    <span class="info-val">Graduating CSE Senior (Available 2026)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="connect-socials">
+                            <h4>Find me on:</h4>
+                            <div class="social-pills">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                                <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-pill"><i class="fa-solid fa-code"></i> LeetCode</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="name" required placeholder="e.g. Alex Morgan">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-at"></i>
+                                    <input type="email" id="email" required placeholder="e.g. alex@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <input type="text" id="subject" required placeholder="Job Opportunity / Project Inquiry">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-solid fa-message"></i>
+                                    <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        
+                        <div class="form-feedback hidden" id="form-feedback">
+                            <div class="feedback-content">
+                                <i class="fa-solid fa-circle-check feedback-icon"></i>
+                                <h4>Message Sent Successfully!</h4>
+                                <p>Thank you for reaching out, Raisa will get back to you shortly.</p>
+                                <button class="btn btn-outline btn-sm" id="reset-form-btn">Send Another Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="logo">
+                    <span class="logo-bracket">&lt;</span>Raisa<span class="logo-dot">.</span>Dev<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p>Designed & Developed with Vanilla JS, HTML5 & Modern CSS.</p>
+            </div>
+
+            <div class="footer-right">
+                <p>&copy; 2026 Raisa Jahan Rini. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modal-body">
+                <!-- Content inserted dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div class="modal-overlay" id="resume-modal">
+        <div class="modal-container glass-card resume-modal-container">
+            <button class="modal-close" id="resume-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="resume-preview-header">
+                <h3><i class="fa-solid fa-file-pdf gradient-icon"></i> Raisa Jahan Rini - Curriculum Vitae</h3>
+                <a href="#" class="btn btn-primary btn-sm" id="download-cv-trigger">
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+            </div>
+            <div class="resume-preview-content">
+                <div class="cv-paper">
+                    <div class="cv-header">
+                        <h2>RAISA JAHAN RINI</h2>
+                        <p class="cv-subtitle">Computer Science & Engineering Graduate | Software Engineer</p>
+                        <p class="cv-contact-line">Email: raisa.jahan.rini@example.com | Phone: +880 1700-000000 | Location: Dhaka, Bangladesh</p>
+                    </div>
+
+                    <hr class="cv-divider">
+
+                    <div class="cv-section">
+                        <h4>EDUCATION</h4>
+                        <div class="cv-item">
+                            <div class="cv-item-head">
+                                <strong>B.Sc. in Computer Science & Engineering</strong>
+                                <span>2022 - 2026 (Final Semester)</span>
+                            </div>
+                            <p>CGPA: 3.92 / 4.00 | Dean's List Awardee (6 consecutive semesters)</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h4>TECHNICAL SKILLS & SPECIALIZATIONS</h4>
+                        <p><strong>Core Technologies:</strong> React.js, Node.js, Express.js, JavaScript (ES6+), C++, Python, SQL</p>
+                        <p><strong>Quality Assurance & Tools:</strong> Software Quality Assurance (SQA / Test Cases & Bug Tracking), Postman, PostgreSQL, MongoDB, Git, Docker</p>
+                    </div>
+
+                    <div class="cv-section">
+                        <h4>CAPSTONE RESEARCH & FEATURED PROJECTS</h4>
+                        <p><strong>Deep Learning Medical Imaging Capstone:</strong> Chest X-Ray diagnostic classification using U-Net & Flask.</p>
+                        <p><strong>DevConnect Full-Stack Platform:</strong> Node.js, React, WebSocket live code snippet ecosystem.</p>
+                        <p><strong>AlgoVisualizer 3D:</strong> Interactive graph & sorting algorithms engine built with Vanilla JS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
