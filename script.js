@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 responseEl.innerHTML = `1. MedVision AI (Capstone)<br>2. DevConnect Platform<br>3. AlgoVisualizer 3D<br>4. Smart Campus Management`;
                 break;
             case 'cgpa':
-                responseEl.innerHTML = `<span style="color: var(--accent-emerald); font-weight: bold;">CGPA: 3.92 / 4.00</span> (Dean's List Awardee)`;
+                responseEl.innerHTML = `<span style="color: var(--accent-emerald); font-weight: bold;">CGPA: 3.80 / 4.00</span> (Dean's List Awardee)`;
                 break;
             case 'resume':
                 openResumeModal();
